@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:dimgray;
+        }
+        button{
+            color: blueviolet;
+            height: 40px;
+            width: 60px;
+            background-color: cadetblue;
+            border: transparent;
+        }
+        span{
+            background-color: coral;
+            color: rgb(26, 8, 8);
+        }
+        #demo2{
+            color: rgb(0, 44, 217);
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <br>
+    <p id="demo2"></p>
+    <button type="button"onclick="document.getElementById('demo2').innerHTML=Date()">click</button>
+    <br><br><br>
+
+
+    
+ <span id="pi">Hellow world</span> <br>
+    <!-- <p </p> -->
+    <button type="button" onclick="changetext()"> click here</button>
+
+    <script>
+        var i = 10;
+        var j = 5;
+        document.getElementById('demo1').innerHTML = "total is" + (i + j);
+    
+    function changetext() {
+        document.getElementById("pi").innerHTML =  "hello from JS";
+    }
+
+
+    </script>
+</body>
+
+</html>
